@@ -1,0 +1,50 @@
+   0.005649250s  INFO prepare_target{force=false package_id=practice_3 v0.1.0 (/Users/chukwurahcharles/Desktop/Class stuffs/c.chukwurahCOS101 /Week_4/practice_3) target="practice_3"}: cargo::core::compiler::fingerprint: fingerprint error for practice_3 v0.1.0 (/Users/chukwurahcharles/Desktop/Class stuffs/c.chukwurahCOS101 /Week_4/practice_3)/Check { test: false }/TargetInner { name: "practice_3", doc: true, ..: with_path("/Users/chukwurahcharles/Desktop/Class stuffs/c.chukwurahCOS101 /Week_4/practice_3/src/main.rs", Edition2024) }
+   0.005671542s  INFO prepare_target{force=false package_id=practice_3 v0.1.0 (/Users/chukwurahcharles/Desktop/Class stuffs/c.chukwurahCOS101 /Week_4/practice_3) target="practice_3"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/chukwurahcharles/Desktop/Class stuffs/c.chukwurahCOS101 /Week_4/practice_3/target/debug/.fingerprint/practice_3-0f3daacb06b9fdf2/bin-practice_3`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.022476459s  INFO prepare_target{force=false package_id=practice_3 v0.1.0 (/Users/chukwurahcharles/Desktop/Class stuffs/c.chukwurahCOS101 /Week_4/practice_3) target="practice_3"}: cargo::core::compiler::fingerprint: fingerprint error for practice_3 v0.1.0 (/Users/chukwurahcharles/Desktop/Class stuffs/c.chukwurahCOS101 /Week_4/practice_3)/Check { test: true }/TargetInner { name: "practice_3", doc: true, ..: with_path("/Users/chukwurahcharles/Desktop/Class stuffs/c.chukwurahCOS101 /Week_4/practice_3/src/main.rs", Edition2024) }
+   0.022489042s  INFO prepare_target{force=false package_id=practice_3 v0.1.0 (/Users/chukwurahcharles/Desktop/Class stuffs/c.chukwurahCOS101 /Week_4/practice_3) target="practice_3"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/chukwurahcharles/Desktop/Class stuffs/c.chukwurahCOS101 /Week_4/practice_3/target/debug/.fingerprint/practice_3-aeedabb5c3e7c4f0/test-bin-practice_3`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+    Checking practice_3 v0.1.0 (/Users/chukwurahcharles/Desktop/Class stuffs/c.chukwurahCOS101 /Week_4/practice_3)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.30s
