@@ -1,3 +1,14 @@
-fn main() {
-    println!("Hello, world!")
+fn main(){
+
+    let v = vec![20, 40, 60 ,80];
+    // vector v owns the object in the heap
+
+    let v2 = &v;
+    let _v2_return = display(v2.clone());
+    println!("in main {:?}",v);
+}
+fn display(v:Vec<i32>)->Vec<i32> {
+    // returning same vector
+    println!("inside display {:?}",v);
+    return v;
 }
