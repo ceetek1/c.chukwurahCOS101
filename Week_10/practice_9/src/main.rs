@@ -13,7 +13,7 @@ impl Rectangle {
 fn main () {
     // instantiate the structure 
     let small = Rectangle {
-        width:10,
+        width: 10,
         height:20
     };
     // print the rectangle's area 
