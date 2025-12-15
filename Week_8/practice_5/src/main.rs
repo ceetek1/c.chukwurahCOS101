@@ -10,7 +10,7 @@ fn main (){
     let  city_num :i32 = input1.trim().parse().expect("failed To read line");
     for count in 0..city_num{
         let mut input2 = String::new();
-        println!("Enter City {}",cpount+1);
+        println!("Enter City {}",count+1);
         std::io::stdin().read_line(&mut input2).expect("Failed to read line");
         let new_city:String = input2.trim().parse().expect("Failed to read line");
         city.push(new_city);
