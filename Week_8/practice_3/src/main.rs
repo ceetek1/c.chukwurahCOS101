@@ -1,4 +1,4 @@
-fn value (n: Options<&char>)
+fn value (n: Option<&char>)
 {
     println!("Element of vector {:?}",n);
 
@@ -16,6 +16,6 @@ fn main(){
     let index:usize = input1.trim().parse().expect("Invalid input");
 
     // getting value at given index value 
-    let ch: Options<&char> = v.get(index);
+    let ch: Option<&char> = v.get(index);
     value(ch);
 }
