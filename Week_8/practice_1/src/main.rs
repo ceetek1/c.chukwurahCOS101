@@ -4,6 +4,7 @@ fn main (){
      // Using Vec::new()
      let v : Vec<i64> = Vec::new();
 
+
      //printing the size of vector
      println!("\n The length of Vec::new is : {}",v.len());
 
